@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/about.css";
 import Questions from "../data/Questions";
 import { aboutBanner, aboutTeamImg } from "../assets/images";
 
 const About = () => {
+  const [questions, setQuestions] = useState([]);
+  useEffect(() => {
+      fetch("http://localhost:8000/api/questions")
+          .then((response) => response.json())
+          .then((data) => setQuestions(data));
+  }, []);
   return (
     <>
       <section className="banner">
@@ -188,14 +194,14 @@ const About = () => {
           Frequently Asked Questions
         </h2>
 
-        {Questions.map((item) => {
-          const { questionID, question, answer } = item;
+        {questions.map((item) => {
+          const { id, question, answer } = item;
           return (
             <div
               className="items--container"
-              key={questionID}
+              key={id}
             >
-              <h2 className="question--num">0{questionID}</h2>
+              <h2 className="question--num">0{id}</h2>
               <h5 className="question">{question}</h5>
               <p className="answer">{answer}</p>
             </div>
