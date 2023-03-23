@@ -9,7 +9,7 @@ class Customer extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'location'];
+    protected $fillable = ['name', 'location', 'planner', 'thumbnail'];
 
     public function galleries() {
 return $this->hasMany(Gallery::class);
