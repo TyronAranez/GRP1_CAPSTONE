@@ -59,9 +59,9 @@ const Gallery = () => {
                                 </p>
                             </div>
 
-                            {/* <Link to={pageLink} className="btn secondary-btn">
+                            <button className="btn secondary-btn">
                                 View Gallery
-                            </Link> */}
+                            </button>
                         </article>
                     );
                 })}

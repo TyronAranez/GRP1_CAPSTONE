@@ -3,7 +3,7 @@ import "../../css/PhotoAlbum.css";
 import AlbumBeccaAndrew from "../../data/Album/AlbumBeccaAndrew";
 import GalleriesData from "../../data/GalleriesData";
 
-const renderAlbum = () => {
+const BeccaAndrew = () => {
     return (
         <>
             <main>

@@ -16,11 +16,12 @@ class CustomerFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'name' => fake()->name(),
-            'location' => fake()->address(),
-            'planner' => fake()->name(),
-            'thumbnail' => fake()->image()
-        ];
+        // return [
+        //     'name' => fake()->name(),
+        //     'location' => fake()->address(),
+        //     'planner' => fake()->name(),
+        //     'thumbnail' => fake()->image()
+
+        // ];
     }
 }
