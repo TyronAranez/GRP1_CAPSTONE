@@ -18,7 +18,9 @@ class CustomerFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'location' => fake()->address()
+            'location' => fake()->address(),
+            'planner' => fake()->name(),
+            'thumbnail' => fake()->image()
         ];
     }
 }
