@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../css/Header.css";
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
 import { logo } from "../assets/images";
+import Sidebar from "./Sidebar";
 
-const Header = ({ click }) => {
-  const [isOn, setIsOn] = useState(false);
+const Header = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleSidebarToggle = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handlePageClick = () => {
+    if (isSidebarOpen) {
+      setIsSidebarOpen(false);
+    }
+  };
+
   return (
-    <header>
+    <header onClick={handlePageClick}>
       <Link to={"/"}>
         <div className="logo-container">
           <img src={logo} alt="" />
@@ -17,10 +28,12 @@ const Header = ({ click }) => {
           </h3>
         </div>
       </Link>
-      <button className="nav-toggle" onClick={click}>
+      <button className="nav-toggle" onClick={handleSidebarToggle}>
         <FaBars id="menu-icon" />
       </button>
 
+      <Sidebar open={isSidebarOpen} />
+      
       <nav className="links-container">
         <ul className="links">
           <li>
