@@ -17,7 +17,7 @@ class GalleryFactory extends Factory
     public function definition(): array
     {
         return [
-            'image_url' => fake()->image()
+            // 'image_url' => fake()->image()
         ];
     }
 }
