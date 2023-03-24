@@ -39,7 +39,7 @@ footer {
 }
 .contact-col address,
 .footer-container p {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .footer-container p {
   color: rgb(122, 116, 116);
