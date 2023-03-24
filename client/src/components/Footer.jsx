@@ -42,9 +42,7 @@ const Footer = () => {
           <h5>About the company</h5>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            sapiente natus libero molestias provident quibusdam placeat quasi
-            earum quos impedit?
+          Leocadio's Event is a wedding planning firm based in Metro Manila, specializing in full service planning and design for modern couples. Started in 2015 by Owner Dia Leocadio, Leocadio's Event has grown to include additional full-time planners and a talented team of wedding coordinators who plan weddings throughout the Metro Manila area and beyond.
           </p>
           <div className="socials-container">
             <a target="_blank" href="https://www.facebook.com/">
