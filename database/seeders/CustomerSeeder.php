@@ -42,7 +42,7 @@ class CustomerSeeder extends Seeder
                 'name' => "Megan + Jake",
                 'location' => "Our Lady of Remedies Parish",
                 'planner' => "Elnie Ebasan",
-                'thumbnail' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1587663636312-U5SNA4F385ZWLWLR2GCA/2019-12-28+Glenn-Zipf+Wedding-0477.JPG"
+                'thumbnail' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1562773710566-VMOLY4NSBXLFPDN155M2/chelsea-monte-330.jpg"
             ],
             [
                 'name' => "Hannah + Carson",
