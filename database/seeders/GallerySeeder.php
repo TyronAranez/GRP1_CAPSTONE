@@ -306,58 +306,7 @@ class GallerySeeder extends Seeder
                 'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1587663588467-T6RKE8303WRHTFVPQP4L/2019-12-28+Glenn-Zipf+Wedding-0147.JPG",
                 'customer_id' => "4",
             ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1556826598594-5RWCW7S03KWV4FV59H4Q/SneakPeek-090.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1579115852579-YF15320KDIM7QBJ25NP4/TerrainweddingbyPeachPlumPearPhoto_178.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1556827906232-CRBASNTI0M8DF41OJT35/SneakPeek-097.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1556827853653-ZX19805VAZ8TY9WHBQAN/SneakPeek-096.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557251799617-CC61XFR95V5LEXYN4NR6/SneakPeek-106.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557252324783-2Q34QDUV0DXKXSM0AZX2/SneakPeek-119.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557252246017-JRTX83B0AFA2TL64PLQG/SneakPeek-120.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557252647020-60QMIHNLBABAI18R01V8/SneakPeek-136.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557252681074-LAA2IJMFUFMCD5BA5LNX/SneakPeek-138.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557253659016-VRIW35P9XFUPK97VP1Q3/SneakPeek-208.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557253396036-4M7VDLN2DDOSOG73MVTQ/SneakPeek-227.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557253570429-D2XUP0IX9QPDYU7JJ2X4/SneakPeek-236.jpg",
-                'customer_id' => "4",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1557253441908-PJ9UQHIITUQZM2SEVVD0/SneakPeek-231.jpg",
-                'customer_id' => "4",
-            ],
+            
             // id 5
             [
                 'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1562773676835-E56HSHTQULVDE2MM56FE/chelsea-monte-109.jpg",
@@ -501,7 +450,7 @@ class GallerySeeder extends Seeder
                 'customer_id' => "6",
             ],
             [
-                'image_url' => "htps://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1562768544995-RE73FL8TDZZRJUFIO0TU/sarah-sean-807.jpg",
+                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1562768544995-RE73FL8TDZZRJUFIO0TU/sarah-sean-807.jpg",
                 'customer_id' => "6",
             ],
             [
@@ -551,10 +500,6 @@ class GallerySeeder extends Seeder
             ],
             [
                 'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1556553053795-FK9V9JRBXCPTYKQ02T0Q/Murray_Wedding_124.jpg",
-                'customer_id' => "7",
-            ],
-            [
-                'image_url' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1556553082870-RHFA9LQT2YJ6KSTS66OQ/Murray_Wedding_133.jpg",
                 'customer_id' => "7",
             ],
             [
