@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../../css/PhotoAlbum.css";
+import "../../src/css/PhotoAlbum.css";
 
 const PostGallery = () => {
     const [album, setAlbum] = useState([]);

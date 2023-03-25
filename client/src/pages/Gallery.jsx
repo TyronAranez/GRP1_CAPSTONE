@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import "../css/Gallery.css";
-import GalleriesData from "../data/GalleriesData";
 import { galleryBanner } from "../assets/images";
-import postGallery from "./Galleries-page/postGallery";
+import postGallery from "./PostGallery";
 
 const Gallery = () => {
     const [customers, setCustomers] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8000/api/customer/")
+        fetch("http://localhost:8000/api/customer")
             .then((response) => response.json())
             .then((data) => setCustomers(data));
     }, []);
