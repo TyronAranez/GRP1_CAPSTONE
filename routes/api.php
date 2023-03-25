@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ConnectController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\QuestionsController;
+use App\Http\Controllers\PackagesController;
 
 Route::post('connection', [ConnectController::class, 'store' ]);
 
@@ -26,5 +27,6 @@ Route::apiResource('/customer', CustomerController::class)->only('index', 'show'
 
 Route::apiResource('/questions', QuestionsController::class)->only('index', 'show');
 
-// Route::post('store', "AuthApi@store");
+Route::apiResource('/package', PackagesController::class)->only('index', 'show');
 
+// Route::post('store', "AuthApi@store");
