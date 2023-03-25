@@ -37,7 +37,7 @@ class QuestionsController extends Controller
      */
     public function show(string $id)
     {
-        $questions = Questions::with('galleries')->findOrFail($id);
+        $questions = Questions::findOrFail($id);
         return response()->json($questions);
     }
 
