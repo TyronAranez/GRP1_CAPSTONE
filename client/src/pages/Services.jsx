@@ -3,8 +3,17 @@ import { servicesBanner } from "../assets/images";
 import "../css/services.css";
 import "../css/index.css";
 import { standardPackages, premiumPackages } from "../data/Packages";
+import { useState, useEffect } from "react";
 
 const Services = () => {
+
+  const [packages, setPackages] = useState([]);
+  useEffect(() => {
+      fetch("http://localhost:8000/api/package")
+          .then((response) => response.json())
+          .then((data) => setPackages(data));
+  }, []);
+
   return (
     <>
       <section className="banner">
@@ -89,9 +98,9 @@ const Services = () => {
       <h2 className="section--header packages-category">Standard Packages</h2>
 
       <div className="packages--container">
-        {standardPackages.map((item) => {
+        {packages.map((item) => {
           const {
-            packId,
+            id,
             packageName,
             paxOption1,
             paxOption2,
@@ -107,7 +116,7 @@ const Services = () => {
           } = item;
 
           return (
-            <article className="package-card" key={packId}>
+            <article className="package-card" key={id}>
               <h4 className="package-name">{packageName}</h4>
               <h3 className="pax-count">{paxOption1}</h3>
               <h3 className="pax-count">{paxOption2}</h3>
@@ -140,9 +149,9 @@ const Services = () => {
       <h2 className="section--header packages-category">Premium Packages</h2>
 
       <div className="packages--container">
-        {premiumPackages.map((item) => {
+        {packages.map((item) => {
           const {
-            pPackageID,
+            id,
             packageName,
             paxOption1,
             paxOption2,
@@ -158,7 +167,7 @@ const Services = () => {
           } = item;
 
           return (
-            <article className="package-card" key={pPackageID}>
+            <article className="package-card" key={id}>
               <h4 className="package-name">{packageName}</h4>
               <h3 className="pax-count">{paxOption1}</h3>
               <h3 className="pax-count">{paxOption2}</h3>
