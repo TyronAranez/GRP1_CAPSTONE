@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import "../css/Gallery.css";
 import GalleriesData from "../data/GalleriesData";
 import { galleryBanner } from "../assets/images";
+import postGallery from "./Galleries-page/postGallery";
 
 const Gallery = () => {
     const [customers, setCustomers] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8000/api/customer")
+        fetch("http://localhost:8000/api/customer/")
             .then((response) => response.json())
             .then((data) => setCustomers(data));
     }, []);
@@ -59,9 +60,12 @@ const Gallery = () => {
                                 </p>
                             </div>
 
-                            <button className="btn secondary-btn">
+                            <Link
+                                to={`/gallery/${id}`}
+                                className="btn secondary-btn"
+                            >
                                 View Gallery
-                            </button>
+                            </Link>
                         </article>
                     );
                 })}
