@@ -21,6 +21,7 @@ Route::get('/test', function () {
     return "Hello";
 });
 
+
 Route::apiResource('/customer', CustomerController::class)->only('index', 'show');
 
 Route::apiResource('/questions', QuestionsController::class)->only('index', 'show');

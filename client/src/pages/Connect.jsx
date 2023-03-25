@@ -1,106 +1,61 @@
 import React, { useState } from "react";
 import "../css/connect.css";
-import axiosClient from "../axios-client"
 import axios from 'axios';
-
 
 const Connect = () => {
 
+  const [inputName, setInputName] = useState("");
+  const [inputLast, setInputLast] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputPhone, setInputPhone] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
 
-const [inputName, setInputName] = useState("");
-const [inputLast, setInputLast] = useState("");
-const [inputEmail, setInputEmail] = useState("");
-const [inputPhone, setInputPhone] = useState("");
-const [inputMessage, setInputMessage] = useState("");
+  const handleInputName = (event) => {
+    setInputName(event.target.value);
+  };
 
-const handleInputName = (event) => {
-  setInputName(event.target.value);
-};
+  const handleInputLast = (event) => {
+    setInputLast(event.target.value);
+  };
 
-const handleInputLast = (event) => {
-  setInputLast(event.target.value);
-};
-const handleInputEmail = (event) => {
-  setInputEmail(event.target.value);
-};
+  const handleInputEmail = (event) => {
+    setInputEmail(event.target.value);
+  };
 
-const handleInputPhone = (event) => {
-  setInputPhone(event.target.value);
-};
+  const handleInputPhone = (event) => {
+    setInputPhone(event.target.value);
+  };
 
-const handleInputMessage = (event) => {
-  setInputMessage(event.target.value);
-};
+  const handleInputMessage = (event) => {
+    setInputMessage(event.target.value);
+  };
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
+    const payload = {
+      firstname: inputName,
+      lastname: inputLast,
+      email: inputEmail,
+      phone: inputPhone, 
+      message: inputMessage,
+    }
 
-const handleSubmit = async (event) => {
-  event.preventDefault();
-
-  // console.log('Form submitted with value:', inputName);
-  // console.log('Form submitted with value:', inputLast);
-  // console.log('Form submitted with value:', inputEmail);
-  // console.log('Form submitted with value:', inputPhone);
-  // console.log('Form submitted with value:', inputMessage);
-
-  const payload = {
-    firstname: inputName,
-    lastname: inputLast,
-    email: inputEmail,
-    phone: inputPhone, 
-    message: inputMessage,
-    
+    await axios.post("http://127.0.0.1:8000/api/connection", payload, {
+      headers: { "Content-Type": "application/json" },
+    })
+    .then(function (resp) {
+      window.alert('Your submission was successful!');
+      setInputName("");
+      setInputLast("");
+      setInputEmail("");
+      setInputPhone("");
+      setInputMessage("");
+    })
+    .catch(function (err) {
+      console.error(err.response.data);
+    });
   }
-  console.log(payload);
-
-  // axios.post('http://127.0.0.1:8000/api/connection', payload).then(response =>{
-  //   console.log(response)
-  // }).then(error =>{
-  //   console.log(error)
-  // })
-
-
-
-
-  // axiosClient.post('http://127.0.0.1:8000/api/connection', payload);
-  // fetch('http://localhost:8000/api/connection', {
-  //   method:'post',
-  //   body:JSON.stringify(
-  //     payload
-  //   ),
-  //   headers:{
-  //     'Accept':'application/json',
-  //     'Content-Type':'application/json',
-  //   }
-  // }).then(function(response){
-  //   response.json().then(function(){
-  //     console.log(response)
-  //   })
-  // })
-
-    await axios
-      .post("http://127.0.0.1:8000/api/connection", payload, {
-        headers: { "Content-Type": "aplication/json" },
-      })
-      .then(function (resp) {
-        console.log(resp.data);
-      })
-      .catch(function (err) {
-        console.error(err.response.data);
-      });
-
-
-}
-
-//   const res = await axios.post('http://127.0.0.1:8000/api/connection', useState);
-  
-//   if(res.data.status === 200)
-//   {
-//     console.log(res.data.message);
-//   }
-// };
-
-
 
 
   return (
