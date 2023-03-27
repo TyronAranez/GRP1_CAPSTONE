@@ -101,64 +101,7 @@ const Services = () => {
                 </p>
             </article>
 
-            <h2 className="section--header packages-category">
-                Standard Packages
-            </h2>
-
-            <div className="packages--container">
-                {packages.map((item) => {
-                    const {
-                        id,
-                        packageName,
-                        paxOption1,
-                        paxOption2,
-                        courses,
-                        styling1,
-                        styling2,
-                        styling3,
-                        styling4,
-                        styling5,
-                        freebies1,
-                        freebies2,
-                        freebies3,
-                    } = item;
-
-                    return (
-                        <article className="package-card" key={id}>
-                            <h4 className="package-name">{packageName}</h4>
-                            <h3 className="pax-count">{paxOption1}</h3>
-                            <h3 className="pax-count">{paxOption2}</h3>
-
-                            <ul>
-                                <h4 className="items-header">Catering:</h4>
-                                <li className="package-item">
-                                    {courses} Courses
-                                </li>
-                            </ul>
-
-                            <ul>
-                                <h4 className="items-header">Styling:</h4>
-                                <li className="package-item">{styling1}</li>
-                                <li className="package-item">{styling2}</li>
-                                <li className="package-item">{styling3}</li>
-                                <li className="package-item">{styling4}</li>
-                                <li className="package-item">{styling5}</li>
-                            </ul>
-
-                            <ul>
-                                <h4 className="items-header">Freebies:</h4>
-                                <li className="package-item">{freebies1}</li>
-                                <li className="package-item">{freebies2}</li>
-                                <li className="package-item">{freebies3}</li>
-                            </ul>
-                        </article>
-                    );
-                })}
-            </div>
-
-            <h2 className="section--header packages-category">
-                Premium Packages
-            </h2>
+            <h2 className="section--header packages-category">OUR PACKAGES</h2>
 
             <div className="packages--container">
                 {packages.map((item) => {
