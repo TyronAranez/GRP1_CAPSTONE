@@ -59,7 +59,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => "Nina + Zach",
                 'location' => "Minor Basilica of San Sebastian",
-                'planner' => "Rhemie Sibug",
+                'planner' => "Mika Ela",
                 'thumbnail' => "https://images.squarespace-cdn.com/content/v1/54b5d529e4b0a17414a81219/1555089981028-LXFVFOZBP9WSYJWU6I53/chloe-jimmy--142.jpg"
             ],
             [
